@@ -14,6 +14,9 @@
 		773CC15520B26C8900E1E282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773CC15420B26C8900E1E282 /* Assets.xcassets */; };
 		773CC15820B26C8900E1E282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773CC15620B26C8900E1E282 /* LaunchScreen.storyboard */; };
 		773CC15B20B26C8900E1E282 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 773CC15A20B26C8900E1E282 /* main.m */; };
+		773CC16720B26CC500E1E282 /* CLFNSCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 773CC16120B26CC400E1E282 /* CLFNSCoder.m */; };
+		773CC16820B26CC500E1E282 /* CLFKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 773CC16220B26CC400E1E282 /* CLFKeychain.m */; };
+		773CC16920B26CC500E1E282 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 773CC16620B26CC500E1E282 /* DataStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		773CC15720B26C8900E1E282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		773CC15920B26C8900E1E282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773CC15A20B26C8900E1E282 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		773CC16120B26CC400E1E282 /* CLFNSCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFNSCoder.m; sourceTree = "<group>"; };
+		773CC16220B26CC400E1E282 /* CLFKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFKeychain.m; sourceTree = "<group>"; };
+		773CC16320B26CC400E1E282 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		773CC16420B26CC500E1E282 /* CLFKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFKeychain.h; sourceTree = "<group>"; };
+		773CC16520B26CC500E1E282 /* CLFNSCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFNSCoder.h; sourceTree = "<group>"; };
+		773CC16620B26CC500E1E282 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,12 @@
 		773CC14720B26C8900E1E282 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
+				773CC16420B26CC500E1E282 /* CLFKeychain.h */,
+				773CC16220B26CC400E1E282 /* CLFKeychain.m */,
+				773CC16520B26CC500E1E282 /* CLFNSCoder.h */,
+				773CC16120B26CC400E1E282 /* CLFNSCoder.m */,
+				773CC16320B26CC400E1E282 /* DataStore.h */,
+				773CC16620B26CC500E1E282 /* DataStore.m */,
 				773CC14820B26C8900E1E282 /* AppDelegate.h */,
 				773CC14920B26C8900E1E282 /* AppDelegate.m */,
 				773CC14B20B26C8900E1E282 /* ViewController.h */,
@@ -145,9 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773CC16920B26CC500E1E282 /* DataStore.m in Sources */,
 				773CC14D20B26C8900E1E282 /* ViewController.m in Sources */,
 				773CC14A20B26C8900E1E282 /* AppDelegate.m in Sources */,
 				773CC15B20B26C8900E1E282 /* main.m in Sources */,
+				773CC16820B26CC500E1E282 /* CLFKeychain.m in Sources */,
+				773CC16720B26CC500E1E282 /* CLFNSCoder.m in Sources */,
 				773CC15320B26C8900E1E282 /* DataStore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AULHABZ7Y3;
 				INFOPLIST_FILE = DataStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.DataStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AULHABZ7Y3;
 				INFOPLIST_FILE = DataStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.DataStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
